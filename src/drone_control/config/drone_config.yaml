@@ -1,0 +1,20 @@
+# Drone Control Configuration Examples
+
+# For serial connection (most common)
+connection_string: "/dev/ttyACM0"
+baud_rate: 115200
+
+# Alternative connections:
+# For UDP connection (SITL simulator)
+# connection_string: "udp:127.0.0.1:14550"
+
+# For TCP connection
+# connection_string: "tcp:192.168.1.100:5760"
+
+# For different serial ports
+# connection_string: "/dev/ttyACM0"  # Common for some flight controllers
+# connection_string: "/dev/ttyUSB1"  # If using USB1
+
+# Different baud rates
+# baud_rate: 115200  # Higher speed
+# baud_rate: 9600    # Lower speed
