@@ -1,0 +1,16 @@
+depthimage_to_laserscan:
+  ros__parameters:
+    # Publish scan in the camera optical frame
+    output_frame_id: camera_depth_frame
+
+    # Depth constraints (meters)
+    range_min: 0.1
+    range_max: 8.0
+
+    # Use a band of rows around the center of the image to reduce noise
+    scan_height: 10
+
+    # Approximate scan period (seconds)
+    scan_time: 0.033
+
+    use_sim_time: true
